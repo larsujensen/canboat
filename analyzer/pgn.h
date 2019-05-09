@@ -2250,6 +2250,7 @@ Pgn pgnList[] = {
       {"Deviation", BYTES(2), RES_RADIANS, true, "rad", ""},
       {"Variation", BYTES(2), RES_RADIANS, true, "rad", ""},
       {"Reference", 2, RES_LOOKUP, false, LOOKUP_DIRECTION_REFERENCE, ""},
+      {"Reserved", 6, RES_BINARY, false, 0, "Reserved"},
       {0}}}
 
     /* http://www.maretron.com/support/manuals/SSC200UM_1.7.pdf */
@@ -2303,6 +2304,7 @@ Pgn pgnList[] = {
       {"Speed", BYTES(2), 0.25, false, "rpm", ""},
       {"Boost Pressure", BYTES(2), RES_PRESSURE, false, "hPa", ""},
       {"Tilt/Trim", BYTES(1), 1, true, "", ""},
+      {"Reserved", BYTES(2), RES_BINARY, false, 0, ""},
       {0}}}
 
     // http://www.osukl.com/wp-content/uploads/2015/04/3155-UM.pdf
@@ -3793,6 +3795,7 @@ Pgn pgnList[] = {
       {"Spare", 6, RES_INTEGER, false, 0, ",0=unavailable"},
       {"AIS Transceiver information", 5, RES_LOOKUP, false, LOOKUP_AIS_TRANSCEIVER, ""},
       {"Reserved", 3, RES_BINARY, false, 0, "reserved"},
+      {"Sequence ID", BYTES(1), RES_INTEGER, false, 0, ""},
       {0}}}
 
     ,
